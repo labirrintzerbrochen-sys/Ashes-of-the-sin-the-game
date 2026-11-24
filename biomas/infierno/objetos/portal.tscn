@@ -1,0 +1,140 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://biomas/infierno/objetos/portal.gd" id="1_r"]
+[ext_resource type="Texture2D" path="res://biomas/infierno/texturas/fuego.png" id="2_r"]
+[ext_resource type="Texture2D" path="res://biomas/infierno/texturas/fuego_azul.png" id="9_r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3"]
+atlas = ExtResource("2_r")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4"]
+atlas = ExtResource("2_r")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5"]
+atlas = ExtResource("2_r")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6"]
+atlas = ExtResource("2_r")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7"]
+atlas = ExtResource("2_r")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8"]
+atlas = ExtResource("2_r")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10"]
+atlas = ExtResource("9_r")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11"]
+atlas = ExtResource("9_r")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12"]
+atlas = ExtResource("9_r")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13"]
+atlas = ExtResource("9_r")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14"]
+atlas = ExtResource("9_r")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15"]
+atlas = ExtResource("9_r")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_16"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8")
+}],
+"loop": true,
+"name": &"normal",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_13")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_15")
+}],
+"loop": true,
+"name": &"secreto",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_17"]
+size = Vector2(40.0, 64.0)
+
+[node name="Portal" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_r")
+
+[node name="Llama" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.0, -32.0)
+scale = Vector2(2.0, 2.0)
+sprite_frames = SubResource("SpriteFrames_16")
+animation = &"normal"
+autoplay = "normal"
+
+[node name="Brillo" type="AnimatedSprite2D" parent="."]
+modulate = Color(1.0, 1.0, 1.0, 0.45)
+position = Vector2(0.0, -40.0)
+scale = Vector2(3.0, 3.0)
+sprite_frames = SubResource("SpriteFrames_16")
+animation = &"normal"
+autoplay = "normal"
+frame = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.0, -32.0)
+shape = SubResource("RectangleShape2D_17")

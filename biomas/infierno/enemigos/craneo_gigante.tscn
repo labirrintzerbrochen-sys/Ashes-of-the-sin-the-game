@@ -1,0 +1,259 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://biomas/infierno/enemigos/craneo_gigante.gd" id="1_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f01_01.png" id="2_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f01_02.png" id="3_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f01_03.png" id="4_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f01_04.png" id="5_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f01_05.png" id="6_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f01_06.png" id="7_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f01_07.png" id="8_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f01_08.png" id="9_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f01_09.png" id="10_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f01_10.png" id="11_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f02_01.png" id="12_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f02_02.png" id="13_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f02_03.png" id="14_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f02_04.png" id="15_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f02_05.png" id="16_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f02_06.png" id="17_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f02_07.png" id="18_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f02_08.png" id="19_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f02_09.png" id="20_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f02_10.png" id="21_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f03_01.png" id="22_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f03_02.png" id="23_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f03_03.png" id="24_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f03_04.png" id="25_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f03_05.png" id="26_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f03_06.png" id="27_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f03_07.png" id="28_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f03_10.png" id="29_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f04_01.png" id="30_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f04_02.png" id="31_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f04_03.png" id="32_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f04_04.png" id="33_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f04_05.png" id="34_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f04_06.png" id="35_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f04_07.png" id="36_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f04_08.png" id="37_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f04_09.png" id="38_r"]
+[ext_resource type="Texture2D" path="res://Personajes/large skull/Large_Skull_f04_10.png" id="39_r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_40"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("3_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("4_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("5_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("6_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("7_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("8_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("9_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("10_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("11_r")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("13_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("14_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("15_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("16_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("17_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("18_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("19_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("20_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("21_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("21_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("22_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("23_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("24_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("25_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("26_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("27_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("28_r")
+}],
+"loop": false,
+"name": &"ataque",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("29_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("30_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("31_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("32_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("33_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("34_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("35_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("36_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("37_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("38_r")
+},
+{
+"duration": 1.0,
+"texture": ExtResource("39_r")
+}],
+"loop": false,
+"name": &"muerte",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_41"]
+radius = 40.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_42"]
+radius = 44.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_43"]
+radius = 96.0
+
+[node name="CraneoGigante" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 1
+script = ExtResource("1_r")
+vida_maxima = 30.0
+sprite_mira_derecha = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.0, 0.0)
+sprite_frames = SubResource("SpriteFrames_40")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.0, 0.0)
+shape = SubResource("CircleShape2D_41")
+
+[node name="ZonaDano" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaDano"]
+position = Vector2(0.0, 0.0)
+shape = SubResource("CircleShape2D_42")
+
+[node name="ZonaFuego" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaFuego"]
+position = Vector2(0.0, 20.0)
+shape = SubResource("CircleShape2D_43")

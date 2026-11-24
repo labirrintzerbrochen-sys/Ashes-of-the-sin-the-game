@@ -1,0 +1,22 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://biomas/infierno/enemigos/flecha.gd" id="1_r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2"]
+size = Vector2(22.0, 4.0)
+
+[node name="Flecha" type="Area2D"]
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_r")
+
+[node name="Visual" type="Polygon2D" parent="."]
+color = Color(0.86, 0.8, 0.68, 1.0)
+polygon = PackedVector2Array(-12.0, -1.0, 7.0, -1.0, 7.0, -3.0, 13.0, 0.0, 7.0, 3.0, 7.0, 1.0, -12.0, 1.0)
+
+[node name="Plumas" type="Polygon2D" parent="Visual"]
+color = Color(0.75, 0.15, 0.12, 1.0)
+polygon = PackedVector2Array(-13.0, -3.0, -8.0, -1.0, -8.0, 1.0, -13.0, 3.0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2")

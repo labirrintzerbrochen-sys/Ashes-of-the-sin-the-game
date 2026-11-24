@@ -1,0 +1,119 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://biomas/infierno/texturas/fuego.png" id="1_r"]
+[ext_resource type="Texture2D" path="res://biomas/infierno/texturas/fuego_azul.png" id="8_r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2"]
+atlas = ExtResource("1_r")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3"]
+atlas = ExtResource("1_r")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4"]
+atlas = ExtResource("1_r")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5"]
+atlas = ExtResource("1_r")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6"]
+atlas = ExtResource("1_r")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7"]
+atlas = ExtResource("1_r")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_9"]
+atlas = ExtResource("8_r")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10"]
+atlas = ExtResource("8_r")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11"]
+atlas = ExtResource("8_r")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12"]
+atlas = ExtResource("8_r")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13"]
+atlas = ExtResource("8_r")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14"]
+atlas = ExtResource("8_r")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_15"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7")
+}],
+"loop": true,
+"name": &"fuego",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_9")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_13")
+},
+{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14")
+}],
+"loop": true,
+"name": &"fuego_azul",
+"speed": 10.0
+}]
+
+[node name="Antorcha" type="Node2D"]
+
+[node name="Llama" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.0, -16.0)
+sprite_frames = SubResource("SpriteFrames_15")
+animation = &"fuego"
+autoplay = "fuego"
